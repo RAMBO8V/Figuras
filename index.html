@@ -215,11 +215,11 @@
             </svg>
             <table>
                 <tr><th>Propiedad</th><th>Fórmula</th><th>Variables</th><th style="width: 25%;">Valor (a)</th></tr>
-                <tr><td>Área Superficial</td><td>A<span class="sub">s</span> = 6a²</td><td>a = arista</td><td rowspan="2" class="input-group">
+                <tr><td>Área Superficial</td><td>A<span class="sub">s</span> = 6a²</td><td>a = arista, A<span class="sub">s</span> = Área Superficial</td><td rowspan="2" class="input-group">
                     <input type="number" id="cubo-a" placeholder="Arista (a)">
                     <button onclick="calcCubo()">Calcular</button>
                 </td></tr>
-                <tr><td>Volumen</td><td>V = a³</td><td>a = arista</td></tr>
+                <tr><td>Volumen</td><td>V = a³</td><td>a = arista, V = Volumen</td></tr>
             </table>
             <div class="results-box" id="cubo-results"></div>
             <div class="clear"></div>
@@ -235,13 +235,13 @@
             </svg>
             <table>
                 <tr><th>Propiedad</th><th>Fórmula</th><th>Variables</th><th style="width: 25%;">Valores (a, b, c)</th></tr>
-                <tr><td>Área Superficial</td><td>A<span class="sub">s</span> = 2(ab + ac + bc)</td><td>a = largo, b = ancho, c = altura</td><td rowspan="2" class="input-group">
+                <tr><td>Área Superficial</td><td>A<span class="sub">s</span> = 2(ab + ac + bc)</td><td>a = largo, b = ancho, c = altura, A<span class="sub">s</span> = Área Superficial</td><td rowspan="2" class="input-group">
                     <input type="number" id="ortoedro-a" placeholder="Largo (a)">
                     <input type="number" id="ortoedro-b" placeholder="Ancho (b)" style="margin-top: 5px;">
                     <input type="number" id="ortoedro-c" placeholder="Altura (c)" style="margin-top: 5px;">
                     <button onclick="calcOrtoedro()">Calcular</button>
                 </td></tr>
-                <tr><td>Volumen</td><td>V = a × b × c</td><td>a = largo, b = ancho, c = altura</td></tr>
+                <tr><td>Volumen</td><td>V = a × b × c</td><td>a = largo, b = ancho, c = altura, V = Volumen</td></tr>
             </table>
             <div class="results-box" id="ortoedro-results"></div>
             <div class="clear"></div>
@@ -259,12 +259,12 @@
             </svg>
             <table>
                 <tr><th>Propiedad</th><th>Fórmula</th><th>Variables</th><th style="width: 25%;">Valores (L, h)</th></tr>
-                <tr><td>Área Total</td><td>A<span class="sub">T</span> = 2<span class="sub">A</span><span class="sub">b</span> + A<span class="sub">L</span></td><td>L = lado base, h = altura</td><td rowspan="2" class="input-group">
+                <tr><td>Área Total</td><td>A<span class="sub">T</span> = 2A<span class="sub">b</span> + A<span class="sub">L</span></td><td>L = lado base, h = altura, A<span class="sub">b</span> = Área Base, A<span class="sub">L</span> = Área Lateral, A<span class="sub">T</span> = Área Total</td><td rowspan="2" class="input-group">
                     <input type="number" id="prisma-l" placeholder="Lado Base (L)">
                     <input type="number" id="prisma-h" placeholder="Altura (h)" style="margin-top: 5px;">
                     <button onclick="calcPrismaCuadrado()">Calcular</button>
                 </td></tr>
-                <tr><td>Volumen</td><td>V = A<span class="sub">b</span> × h</td><td>A<span class="sub">b</span> = área base, h = altura</td></tr>
+                <tr><td>Volumen</td><td>V = A<span class="sub">b</span> × h</td><td>A<span class="sub">b</span> = área base, h = altura, V = Volumen</td></tr>
             </table>
             <div class="results-box" id="prisma-results"></div>
             <div class="clear"></div>
@@ -278,12 +278,12 @@
             </svg>
             <table>
                 <tr><th>Propiedad</th><th>Fórmula</th><th>Variables</th><th style="width: 25%;">Valores (r, h)</th></tr>
-                <tr><td>Área Lateral</td><td>A<span class="sub">L</span> = 2πrh</td><td>r = radio, h = altura</td><td rowspan="2" class="input-group">
+                <tr><td>Área Lateral</td><td>A<span class="sub">L</span> = 2πrh</td><td>r = radio, h = altura, A<span class="sub">L</span> = Área Lateral</td><td rowspan="2" class="input-group">
                     <input type="number" id="cilindro-r" placeholder="Radio (r)">
                     <input type="number" id="cilindro-h" placeholder="Altura (h)" style="margin-top: 5px;">
                     <button onclick="calcCilindro()">Calcular</button>
                 </td></tr>
-                <tr><td>Volumen</td><td>V = πr²h</td><td>r = radio, h = altura</td></tr>
+                <tr><td>Volumen</td><td>V = πr²h</td><td>r = radio, h = altura, V = Volumen</td></tr>
             </table>
             <div class="results-box" id="cilindro-results"></div>
             <div class="clear"></div>
@@ -295,12 +295,12 @@
             </svg>
             <table>
                 <tr><th>Propiedad</th><th>Fórmula</th><th>Variables</th><th style="width: 25%;">Valores (r, h)</th></tr>
-                <tr><td>Área Lateral</td><td>A<span class="sub">L</span> = πrg</td><td>r = radio, g = generatriz</td><td rowspan="2" class="input-group">
+                <tr><td>Área Lateral</td><td>A<span class="sub">L</span> = πrg</td><td>r = radio, g = generatriz, A<span class="sub">L</span> = Área Lateral</td><td rowspan="2" class="input-group">
                     <input type="number" id="cono-r" placeholder="Radio (r)">
                     <input type="number" id="cono-h" placeholder="Altura (h)" style="margin-top: 5px;">
                     <button onclick="calcCono()">Calcular</button>
                 </td></tr>
-                <tr><td>Volumen</td><td>V = <span class="frac"><span class="top">πr²h</span><span class="bottom">3</span></span></td><td>r = radio, h = altura</td></tr>
+                <tr><td>Volumen</td><td>V = <span class="frac"><span class="top">πr²h</span><span class="bottom">3</span></span></td><td>r = radio, h = altura, V = Volumen</td></tr>
             </table>
             <div class="results-box" id="cono-results"></div>
             <div class="clear"></div>
@@ -315,12 +315,12 @@
             </svg>
             <table>
                 <tr><th>Propiedad</th><th>Fórmula</th><th>Variables</th><th style="width: 25%;">Valores (L, h)</th></tr>
-                <tr><td>Área Lateral</td><td>A<span class="sub">L</span> = <span class="frac"><span class="top">P × a<span class="sub">p</span></span><span class="bottom">2</span></span></td><td>P = perímetro base, a<span class="sub">p</span> = apotema pirámide</td><td rowspan="2" class="input-group">
+                <tr><td>Área Lateral</td><td>A<span class="sub">L</span> = <span class="frac"><span class="top">P × a<span class="sub">p</span></span><span class="bottom">2</span></span></td><td>P = perímetro base, a<span class="sub">p</span> = apotema pirámide, A<span class="sub">L</span> = Área Lateral</td><td rowspan="2" class="input-group">
                     <input type="number" id="piramide-l" placeholder="Lado Base (L)">
                     <input type="number" id="piramide-h" placeholder="Altura (h)" style="margin-top: 5px;">
                     <button onclick="calcPiramide()">Calcular</button>
                 </td></tr>
-                <tr><td>Volumen</td><td>V = <span class="frac"><span class="top">A<span class="sub">b</span> × h</span><span class="bottom">3</span></span></td><td>A<span class="sub">b</span> = área base, h = altura</td></tr>
+                <tr><td>Volumen</td><td>V = <span class="frac"><span class="top">A<span class="sub">b</span> × h</span><span class="bottom">3</span></span></td><td>A<span class="sub">b</span> = área base, h = altura, V = Volumen</td></tr>
             </table>
             <div class="results-box" id="piramide-results"></div>
             <div class="clear"></div>
@@ -329,9 +329,11 @@
             <div class="esfera-3d figura-svg" style="width:60px; height:60px;"></div>
             <table>
                 <tr><th>Propiedad</th><th>Fórmula</th><th>Variables</th><th style="width: 25%;">Valor (r)</th></tr>
-                <tr><td>Área Superficial</td><td>A<span class="sub">s</span> = 4πr²</td><td>r = radio</td><td rowspan="2" class="input-group">
-                    <tr><td>Volumen</td><td>V = <span class="frac"><span class="top">4πr³</span><span class="bottom">3</span></span></td><td>r = radio</td></tr>
+                <tr><td>Área Superficial</td><td>A<span class="sub">s</span> = 4πr²</td><td>r = radio, A<span class="sub">s</span> = Área Superficial</td><td rowspan="2" class="input-group">
+                    <input type="number" id="esfera-r" placeholder="Radio (r)">
+                    <button onclick="calcEsfera()">Calcular</button>
                 </td></tr>
+                <tr><td>Volumen</td><td>V = <span class="frac"><span class="top">4πr³</span><span class="bottom">3</span></span></td><td>r = radio, V = Volumen</td></tr>
             </table>
             <div class="results-box" id="esfera-results"></div>
             <div class="clear"></div>
@@ -361,10 +363,10 @@
             </ul>
             <strong>Notas:</strong>
             <ul>
-                <li>El **apotema** ($a$) es la distancia desde el centro de un polígono regular al punto medio de uno de sus lados.</li>
-                <li>La **generatriz** ($g$) de un cono es la línea que al girar genera un cono o cilindro. En el cono, es la hipotenusa del triángulo formado por el radio y la altura.</li>
-                <li>La **altura** ($h$) siempre es perpendicular a la base.</li>
-                <li>La fórmula de Herón permite calcular el área de un triángulo usando el **semi-perímetro** ($s$).</li>
+                <li>El <strong>apotema</strong> (a) es la distancia desde el centro de un polígono regular al punto medio de uno de sus lados.</li>
+                <li>La <strong>generatriz</strong> (g) de un cono es la línea que al girar genera un cono o cilindro. En el cono, es la hipotenusa del triángulo formado por el radio y la altura.</li>
+                <li>La <strong>altura</strong> (h) siempre es perpendicular a la base.</li>
+                <li>La fórmula de Herón permite calcular el área de un triángulo usando el <strong>semi-perímetro</strong> (s).</li>
             </ul>
         </div>
     </section>
